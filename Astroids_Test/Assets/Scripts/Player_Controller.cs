@@ -43,7 +43,8 @@ public class Player_Controller : MonoBehaviour {
 	public void FIRe () {
 
 		Transform muzzle = GameObject.Find ("Player/Muzzle").transform;
-		 Instantiate (projectile, muzzle.localPosition, Quaternion.identity);
+		Debug.Log (muzzle.position);
+		Instantiate (projectile, muzzle.position, Quaternion.identity);
 		limit++;
 
 		}
